@@ -1,167 +1,159 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-nav .navbar{
-    z-index: 500;
+nav .navbar {
+  z-index: 500;
 }
 
-nav .navbar-nav{
-    margin-left: 100px;
-}
+
 nav a:hover {
-    transform: scale(1.09);
-    transition: 1.3s ease;
-    background-color:rgba(255, 0, 0, 0.663);
-     
+  transform: scale(1.09);
+  transition: 1.3s ease;
+  background-color: rgba(255, 0, 0, 0.663);
 }
-nav .logo:hover{
-    background-color: white;
+nav .logo:hover {
+  background-color: white;
 }
-nav li{
-    margin: 2px;
+
+.sec1 {
+  background-color: #f5f3f3;
+  /* height: 800px; */
 }
-.sec1{
-    width: 100%;
-    background-color: #f5f3f3;
-    /* height: 800px; */
-}
-.sec1 .shop{
-    margin-bottom: 50px;
-    border: none;
-    width: 130px;
-    border-radius: 10px;
-    color: white;
-    padding: 10px;
-    background-color: red;
+.sec1 .shop {
+  margin-bottom: 50px;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  background-color: red;
 }
 
 .sec1 .lt {
-    margin-top: 330px;
-    margin-left: 100px;
+  /* border: 1px solid green; */
+  margin-top: 330px;
+  padding-left: 90px;
+
+  /* margin-left: 100px; */
 }
-.lt h1{
-    font-size: 70px;
-    color: black;
+@media (max-width: 380px){ 
+   .sec1 .lt h1 {
+        font-size: 40px;
+    }
+    .sec1 .rt img{
+        width: 240px;
+        height: 300px;
+    }
+    
+}
+.lt h1 {
+  font-size: 70px;
+  color: black;
 }
 
-.rt{
-   text-align: right;
+.rt {
+  text-align: right;
+  padding-right: 100px;
 }
-.rt img{
-    margin-right: 150px;
-}
+
 /* end sec1 */
 
-
-.sec2{
-    margin-top: 30px;
-    width: 100%;    
+.sec2 {
+  margin-top: 30px;
 }
-.sec2 div div{
-    text-align: center;
+.sec2 div div {
+  text-align: center;
 }
 
-.sec2 div div img:hover{
-
-    transform: scale(1.1);}
-    .sec2 div div{
-        overflow: hidden;        
-    }
-.sec2 div div img{
-    transition: ease 1s ;
-
+.sec2 div div img:hover {
+  transform: scale(1.1);
+}
+.sec2 div div {
+  overflow: hidden;
+}
+.sec2 div div img {
+  transition: ease 1s;
 }
 /* end sec2 */
 
-.sec3{
-    width: 100%;
-    margin-top: 50px;
-}
-.sec3 div .frst {
-    margin-left: -15px;
+.sec3 {
+  margin-top: 50px;
 }
 
-.sec3 div .frst img{
-    margin-left: -15px;   
-}
 /* end sec3 */
 
-
-.sec4{
-    text-align: center;
-    margin-top: 100px;
+.sec4 {
+  text-align: center;
+  margin-top: 100px;
 }
 
-.sec4 .row{
-    margin-top: 100px;
+.sec4 .row {
+  margin-top: 100px;
 }
-.sec4 div .lt{
-    
-    background-image: url(popular1.png);
-    background-repeat: no-repeat;   
-    background-size: cover;
-    background-position: center;
-    height: 480px;
-    border-bottom: 4px solid red;
-    
+.sec4 div .lt {
+  background-image: url(popular1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  border-bottom: 4px solid red;
 }
 
-.sec4 .lt .hidden{
-    position: relative;
-    
+.sec4 .lt .hidden {
+  position: relative;
 }
-.sec4 .addcart{
-    text-align: center ;
-    background-color: rgb(255, 0, 0);
-    animation-name: back;
-    animation-duration: 1.5s;
-    width: 100%;
-    height: 70px;
-    position: absolute;
-    bottom: 0px;
-    padding-top: 25px;
-    transition: all ease .5s;
-    display: none;
-    
-    /* z-index: -1; */
+.sec4 .addcart {
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+  animation-name: back;
+  animation-duration: 1.5s;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+  padding-top: 25px;
+  transition: all ease 1s;
+  opacity: 0;
+
+  /* z-index: -1; */
 }
-@keyframes back{
-    from{background-color: rgba(255, 0, 0, 0.493);}
-    to{background-color: red;};
+@keyframes back {
+  from {
+    background-color: rgba(255, 0, 0, 0.493);
+  }
+  to {
+    background-color: red;
+  }
 }
-.sec4 .lt:hover .addcart{
-    display:block;
+.sec4 .lt:hover .addcart {
+  opacity: 1;
 }
 
-.sec4 .lt .fa-heart{
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    font-size: 30px;
-    transition:all ease .5s;
-    display: none;
+.sec4 .lt .fa-heart {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 30px;
+  transition: all ease 0.5s;
+  opacity: 0;
 }
-.sec4 .lt:hover .fa-heart{
-    display:block;
+.sec4 .lt:hover .fa-heart {
+  opacity: 1;
 }
 /* end sec4 *2  */
 
-
-body .background{
-    margin-top: 100px;
-    background-image: url("vidoe_more.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 210px;
+body .background {
+  margin-top: 100px;
+  background-image: url("vidoe_more.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+  height: 210px;
 }
-body .background .col{
-    text-align: left;
-    color: white;
+body .background .col {
+  text-align: left;
+  color: white;
 }
-
-
-
